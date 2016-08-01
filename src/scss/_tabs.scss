@@ -1,0 +1,41 @@
+.content {
+    position: relative;
+    height: 145px;
+
+    div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 40px;
+        opacity: 0;
+        width: 91%;
+    }
+
+}
+
+.ch-tabs input.tab-selector-1:checked ~ .content .content-1,
+.ch-tabs input.tab-selector-2:checked ~ .content .content-2 {
+
+    filter: alpha(opacity=100);
+    opacity: 1;
+
+}
+
+input:checked + label {
+    background-image: linear-gradient(#EEE,#FFF 25px);
+    border-bottom: 1px solid #FFF;
+    cursor: default;
+    font-weight: 700;
+    text-shadow: 2px 0 2px rgba(255,255,255,.5);
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+
+
+
+
+
